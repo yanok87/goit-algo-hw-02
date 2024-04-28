@@ -6,7 +6,7 @@ from collections import deque
 def is_palindrome(word):
     """This function checks if the word it palindrome"""
 
-    characters = word.strip().lower()
+    characters = word.strip().replace(" ", "").lower()
     character_deque = deque(characters)
 
     while len(character_deque) > 1:
